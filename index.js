@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
 
-const cors = require('cors')
+// CORS not required because FE using proxy in vite.config.js
+// const cors = require('cors')
 app.use(cors())
 app.use(express.static('dist'))
 
